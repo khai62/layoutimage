@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layoutimage/drawer.dart';
 
 class MyPage extends StatelessWidget {
   const MyPage({super.key});
@@ -8,6 +9,7 @@ class MyPage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
+        drawer: const MyDrawer(),
         body: Container(
           padding: const EdgeInsets.only(left: 15, right: 15),
           child: const Column(
